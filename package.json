@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "npx tailwindcss -i ./src/input.css -o ./dist/build.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/build.css --minify",
+    "prettier": "npx prettier ./src/*.html --write"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.1",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "tailwindcss": "^3.4.1"
+  }
+}
