@@ -77,7 +77,7 @@ module.exports = {
 > Visual Studio Code 的官方 Tailwind CSS IntelliSense 扩展通过为用户提供自动补齐、语法高亮和 linting 等高级功能来增强 Tailwind 开发体验。
 
 
-![Tailwind CSS IntelliSense](https://tailwind.nodejs.cn/_next/static/media/intellisense.c22de782.png)
+![Tailwind CSS IntelliSense](/images/intellisense.c22de782.png)
 
 
 `自动补齐`. 类名智能建议，CSS 函数和指令.
@@ -111,7 +111,7 @@ module.exports = {
 [更多prettier命令](https://www.prettier.cn/docs/cli.html)
 
 ```bash
- npx prettier ./src/*.html --write
+> npx prettier ./src/*.html --write
 ```
 
 我们也可将此 cli 加到 package.json 的脚本执行命令中
@@ -128,7 +128,7 @@ module.exports = {
 可以通过添加 --minify 标志来缩小 CSS：
 
 ```bash
-npx tailwindcss -i ./src/input.css -o ./dist/build.css --minify
+> npx tailwindcss -i ./src/input.css -o ./dist/build.css --minify
 ```
 
 通用我们也可以将上面的 cli 添加到 package.json 中 scripts
