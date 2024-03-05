@@ -5,13 +5,188 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../dist/build.css" rel="stylesheet" />
   </head>
-  <body>
-    <div class="p-4 pt-2">每天入一坑</div>
-    <h1 class="bg-blue-300 p-4 text-3xl font-bold underline shadow">
-      Hello Tailwind CSS!
-    </h1>
-    <div class="p-4 pt-6">
-      <p class="bg-clip-text">坑坑不一样</p>
+  <body class="container mx-auto dark:bg-slate-900 pt-5">
+     <h1 class="dark:text-white">Flex 栅格布局</h1>
+      <div class="w-full p-4 flex justify-between items-center border mt-5 mb-5 dark:border-gray-700">
+        <h3 class="p-4 text-3xl font-bold shadow dark:text-white">
+          Hello Tailwind CSS!
+        </h3>
+        <button
+          id="btn"
+          class="bg-violet-500 h-[40px] p-4 pb-2 pt-2 text-white hover:bg-violet-600 focus:outline-none focus:ring focus:ring-violet-300 active:bg-violet-700"
+          onclick="changeTheme"
+        >
+          变更主题
+        </button>
+      </div>
+    <h1 class="dark:text-white">Grid 栅格布局</h1>
+    <div class="grid gap-10 grid-cols-3 md:grid-cols-4 lg:grid-cols-6 mt-5 mb-5">
+      <div class="bg-indigo-500 text-center h-10 text-2xl">grid 1</div>
+      <div class="bg-teal-500 text-center h-10 text-2xl">grid 2</div>
+      <div class="bg-indigo-500 text-center h-10 text-2xl">grid 3</div>
+      <div class="bg-teal-500 text-center h-10 text-2xl">grid 4</div>
+      <div class="bg-indigo-500 text-center h-10 text-2xl">grid 5</div>
+      <div class="bg-teal-500 text-center h-10 text-2xl">grid 6</div>
     </div>
+
+    <div
+      class="rounded-lg bg-white px-6 py-8 shadow-xl ring-1 ring-slate-900/5 dark:bg-slate-900"
+    >
+      <div>
+        <span
+          class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-2 shadow-lg"
+        >
+          <svg
+            class="h-6 w-6 text-white"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <!-- ... -->
+          </svg>
+        </span>
+      </div>
+      <h3
+        class="mt-5 text-base font-medium tracking-tight text-slate-900 dark:text-white"
+      >
+        Writes Upside-Down
+      </h3>
+      <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">
+        The Zero Gravity Pen can be used to write in any orientation, including
+        upside-down. It even works in outer space.
+      </p>
+    </div>
+
+    <div class="flex items-center p-5 dark:text-white">
+      <img
+        class="h-14 w-14"
+        src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80"
+      />
+      <div class="columns-2 ml-4">
+        <strong>Andrew Alfred</strong>
+        <span>Technical advisor</span>
+      </div>
+    </div>
+    <div class="-mb-3 mt-4">
+      <div
+        class="not-prose relative overflow-hidden rounded-xl bg-slate-50 dark:bg-slate-800/25"
+      >
+        <div
+          class="bg-grid-slate-100 dark:bg-grid-slate-700/25 absolute inset-0 [mask-image:linear-gradient(0deg,#fff,rgba(255,255,255,0.6))] dark:[mask-image:linear-gradient(0deg,rgba(255,255,255,0.1),rgba(255,255,255,0.5))]"
+          style="background-position: 10px 10px"
+        ></div>
+        <div class="relative overflow-auto rounded-xl p-8">
+          <div class="relative">
+            <div class="relative columns-1 gap-8 sm:columns-3">
+              <div class="aspect-w-16 aspect-h-9 relative">
+                <img
+                  class="w-full rounded-lg object-cover"
+                  src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2952&amp;q=80"
+                />
+                <div
+                  class="absolute inset-0 rounded-lg ring-1 ring-inset ring-black/10"
+                ></div>
+              </div>
+              <div class="aspect-w-1 aspect-h-1 relative mt-8">
+                <img
+                  class="w-full rounded-lg object-cover"
+                  src="https://images.unsplash.com/photo-1434394354979-a235cd36269d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2902&amp;q=80"
+                />
+                <div
+                  class="absolute inset-0 rounded-lg ring-1 ring-inset ring-black/10"
+                ></div>
+              </div>
+              <div class="aspect-w-1 aspect-h-1 relative mt-8">
+                <img
+                  class="w-full rounded-lg object-cover"
+                  src="https://images.unsplash.com/photo-1491904768633-2b7e3e7fede5?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3131&amp;q=80"
+                />
+                <div
+                  class="absolute inset-0 rounded-lg ring-1 ring-inset ring-black/10"
+                ></div>
+              </div>
+              <div
+                class="aspect-w-1 aspect-h-1 relative mt-8 hidden sm:mt-0 sm:block"
+              >
+                <img
+                  class="w-full rounded-lg object-cover"
+                  src="https://images.unsplash.com/photo-1463288889890-a56b2853c40f?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3132&amp;q=80"
+                />
+                <div
+                  class="absolute inset-0 rounded-lg ring-1 ring-inset ring-black/10"
+                ></div>
+              </div>
+              <div class="aspect-w-16 aspect-h-9 relative mt-8 hidden sm:block">
+                <img
+                  class="w-full rounded-lg object-cover"
+                  src="https://images.unsplash.com/photo-1611605645802-c21be743c321?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2940&amp;q=80"
+                />
+                <div
+                  class="absolute inset-0 rounded-lg ring-1 ring-inset ring-black/10"
+                ></div>
+              </div>
+              <div class="aspect-w-1 aspect-h-1 relative mt-8 hidden sm:block">
+                <img
+                  class="w-full rounded-lg object-cover"
+                  src="https://images.unsplash.com/photo-1498603993951-8a027a8a8f84?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2936&amp;q=80"
+                />
+                <div
+                  class="absolute inset-0 rounded-lg ring-1 ring-inset ring-black/10"
+                ></div>
+              </div>
+              <div
+                class="aspect-w-1 aspect-h-1 relative mt-8 hidden sm:mt-0 sm:block"
+              >
+                <img
+                  class="w-full rounded-lg object-cover"
+                  src="https://images.unsplash.com/photo-1526400473556-aac12354f3db?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2940&amp;q=80"
+                />
+                <div
+                  class="absolute inset-0 rounded-lg ring-1 ring-inset ring-black/10"
+                ></div>
+              </div>
+              <div class="aspect-w-1 aspect-h-1 relative mt-8 hidden sm:block">
+                <img
+                  class="w-full rounded-lg object-cover"
+                  src="https://images.unsplash.com/photo-1617369120004-4fc70312c5e6?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1587&amp;q=80"
+                />
+                <div
+                  class="absolute inset-0 rounded-lg ring-1 ring-inset ring-black/10"
+                ></div>
+              </div>
+              <div class="aspect-w-16 aspect-h-9 relative mt-8 hidden sm:block">
+                <img
+                  class="w-full rounded-lg object-cover"
+                  src="https://images.unsplash.com/photo-1518892096458-a169843d7f7f?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2940&amp;q=80"
+                />
+                <div
+                  class="absolute inset-0 rounded-lg ring-1 ring-inset ring-black/10"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="pointer-events-none absolute inset-0 rounded-xl border border-black/5 dark:border-white/5"
+        ></div>
+      </div>
+    </div>
+
+    <script src="./spaghetti.js"></script>
+    <script>
+      const btn = document.body.querySelector("#btn");
+      console.log('btn-----', btn);
+      btn.addEventListener("click", changeTheme);
+      function changeTheme() {
+        const theme = localStorage.getItem("theme");
+        console.log("theme:", theme)
+        if (theme === "dark") {
+          setStyleTheme("light")
+        } else {
+          setStyleTheme("dark")
+        }
+      }
+    </script>
   </body>
 </html>
